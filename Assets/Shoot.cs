@@ -11,6 +11,11 @@ public class Shoot : MonoBehaviour
     {
         
     }
+
+    private void OnEnable()
+    {
+        isShooting = false;
+    }
     void Update()
     {
         if(isShooting == false && Input.GetKeyDown(KeyCode.Mouse0))
